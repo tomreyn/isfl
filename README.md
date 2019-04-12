@@ -1,10 +1,10 @@
 # isfl - Insyde Software UEFI firmware flashing kernel driver
 
-This is the GPLv2 licensed Linux driver which is a requirement to enable firmware updates using Insyde Software's H2OFFT-Lx(64) utility on GNU Linux. The utility itself is not available here, since it unfortunately does not seem to be GPL licensed.
+This is version 0.0.05 of the (GPLv2 licensed) Linux driver required to carry out firmware upgrades on Insyde Softwares UEFI platform, using the H2OFFT-Lx(64) utility on GNU Linux. The utility itself is not available here, since it does not seem to be GPL licensed.
 
 ## Requirements
 
-* Kernel headers for your currently running kernel
+* Kernel headers for your currently running kernel, >= 2.6.36
 * GNU make
 
 ## Compilation
@@ -18,6 +18,8 @@ To build the kernel module:
 On a successful build, the kernel module will be built:
 * isfl_drv.ko (for ia32)
 * isfl_drv_x64.ko (for x64)
+
+Load it using `modprobe -v isfl_drv` or `modprobe -v isfl_drv_x64`.
   
 ## Trouble shooting
 
