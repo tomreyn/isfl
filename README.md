@@ -28,3 +28,7 @@ Load it using `modprobe -v isfl_drv` or `modprobe -v isfl_drv_x64`.
 ## Trouble shooting
 
 Upon loading the module, if you run into the `-1 Invalid module format` error message, this suggests you are using a module that was built on a different platform (ia32 vs. x64) or for an ABI incompatible kernel version.
+
+## No maintenance
+
+Please note that I (@tomreyn, you may be looking at a fork of the original repo where things may differ) have no intention of maintaining this code. I'm merely making it available here on GitHub for others to fork and hack on it, just in case it goes offline at the original location I copied this GPLv2 code from. If you have questions about this code or the H2OFFT-L(x64) software, feel free to email me: `tomreyn 47 megaglest |)07 org`.
